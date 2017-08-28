@@ -7,20 +7,19 @@
   </head>
   <body>
      <div class ="container" id="lib1">
-
         <div class = "jumbotron" id="lib2">
-          <h1>Library Department's Clearance Form</h1>
 
         </div>
+          <h1 id = "heading">Library Department's Clearance Form</h1>
+              <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
+              <ol>
+                <form>
+                <li>Full Name:<br></li>
+                  <input type="text" name="fullname"><br>
+                <li>Staff Number:<br></li>
+                  <input type="text" name="staffnumber">
+                </form>
 
-          <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
-            <ol>
-              <form>
-              <li>Full Name:<br></li>
-                <input type="text" name="fullname"><br>
-              <li>Staff Number:<br></li>
-                <input type="text" name="staffnumber">
-              </form>
               <li>Have you worked in this department?</li>
                 <button id = "yes" type="button" name="button">Yes</button>
                 <button id = "no"  type="button" name="button"> No</button>
@@ -28,6 +27,7 @@
                 <form> Date:
                   <input type="date" name="joiningdate">
                 </form>
+
               <li>Date of leaving</li>
                 <form> Date
                   <input type="date" name="leavingdate">
@@ -35,6 +35,7 @@
               <li>List of company books and publications in your posession:</li>
                 <input type="text" name="books">
             </ol>
+
             <p><strong> Note.</strong>Provision of inaccurate or false data on
               this form could greatly hamper the processing of your clearance request</p>
               <button id = "submit" type="submit" name="button">submit</button>
