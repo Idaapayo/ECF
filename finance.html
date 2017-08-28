@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <header id="heading">
-        <h2>Finace Department</h2>
+        <h2>Finance Department</h2>
       </header>
       <form id="employee-name">
         <div class="form-group">
@@ -24,17 +24,17 @@
           <label for="employee-serial">Employee Sr.No:</label>
           <input type="text" class="employee-serial" required>
         </div>
-        <button type=:"submit" id="button-submit" class="btn btn-info">Submit</button>
+        <button type=:"submit" id="button-submit" class="btn btn-success">Submit</button>
       </form>
     </div><br>
     <section>
       <div class="container">
         <ol>
           <li>Have you worked in this department:</li>
-          <form>
+          <form id="questions">
             <input type="radio" name="optradio">Yes<br>
             <input type="radio" name="optradio">No
-          </form><br>
+          <br>
           <li>
             <ul>
             <li>Start Date:</li>
@@ -50,12 +50,39 @@
           </div>
 
           <li>List of company issued assets</li>
-
-
-
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Date Issued</th>
+                  <th>Amount Disbursed</th>
+                  <th>Amount Repaid</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Loans</strong></td>
+                  <td><input type="date"  value=""></td>
+                  <td><input type="text"  value=""></td>
+                  <td><input type="text"  value=""></td>
+                </tr>
+                <tr>
+                  <td><strong>Salary Advance</strong></td>
+                  <td><input type="date"  value=""></td>
+                  <td><input type="text"  value=""></td>
+                  <td><input type="text"  value=""></td>
+                </tr>
+              </tbody>
+            </table>
         </ol>
+        <button type="submit" name="button" class="btn btn-info">Submit</button>
       </div>
+    </div>
+
+    </form>
     </section>
+
 
   </body>
 </html>

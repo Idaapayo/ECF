@@ -1,4 +1,10 @@
 #heading{
   text-align: center;
-  background-color: ;
+  background-color: #f27b35;
+}
+thead{
+  color: #8c2020;
+}
+body{
+  background: url("..assets/images/image1.png");
 }
