@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>H-R form</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <h3>Checklist for Human resource department </h3>
+      <h1>Checklist for Human resource department </h1>
       <form id="hr">
         <div class="form-group">
         <label for="name">Your name:</label>
@@ -20,7 +21,7 @@
         <label for="staffnumber">Enter your staff number</label>
           <input type="text" class="form-control" id="staffnumber">
         </div>
-        <button type="submit" name="button">submit</button>
+        <button type="submit" name="button" class="btn btn-primary">submit</button>
       </form>
       <form id="checkbox">
        <div class="yesno">
@@ -30,7 +31,51 @@
            <input type="checkbox" name="option2" value="no" checked> NO<br>
            <br>
        </div>
-       <button type="submit" name="button">submit</button>
+       <button type="submit" name="button" class="btn btn-primary">submit</button>
        </form>
+       <div class="details">
+         <form id="details">
+           <div class="form group">
+             <label for="startdate">Start Date:</label>
+             <input type="text" class="form-control" id="startdate">
+           </div>
+           <div class="form group">
+             <label for="enddate">End Date:</label>
+             <input type="text" class="form-control" id="enddate">
+           </div>
+           <div class="form group">
+             <label for="nameofsupervisor">Name of your supervisor:</label>
+             <input type="text" class="form-control" id="supervisor">
+           </div>
+           <div class="form group">
+             <label for="reasonforleaving">Your reason for leaving:</label>
+             <input type="text" class="form-control" id="leaving">
+           </div>
+           <p>List of company issued assets</p>
+           <div class="row">
+             <div class="col-md-4">
+               <h3>Name</h3>
+               <ul>Company ID</ul>
+               <ul>House</ul>
+               <ul>Company Car</ul>
+             </div>
+             <div class="col-md-4">
+               <h2>Returned Items</h2>
+                <input type="checkbox" name="option1" value="returned"> Returned<br>
+                <input type="checkbox" name="option1" value="returned"> Returned<br>
+                <input type="checkbox" name="option1" value="returned"> Returned<br>
+              </div>
+              <div class="col-md-4">
+                <h2>Unreturned Items</h2>
+                <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+                <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+                <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+              </div>
+            </div>
+              <button type="submit" name="button" class="btn btn-primary">submit</button>
+            </form>
+            <div class="foot">
+            </div>
+          </div>
   </body>
 </html>
