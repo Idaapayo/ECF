@@ -7,17 +7,16 @@
   </head>
   <body>
       <div class ="container" id="info1">
-       <div class = "jumbotron" id="info2">
-       </div>
+       <div class = "jumbotron" id="info2"></div> </br>
          <h1>I.S. Department Clearance Form</h1>
-         <p>Fill out the following form and submit it with accurate information for your clearance process to commence.</p>
-           <ol>
-             <form>
-             <li>Full Name:<br></li>
-               <input type="text" name="fullname"><br>
-             <li>Staff Number:<br></li>
-               <input type="text" name="staffnumber">
-             </form>
+           <p>Fill out the following form and submit it with accurate information for your clearance process to commence.</p>
+          <ol>
+           <form>
+            <li>Full Name:<br></li>
+             <input type="text" name="fullname"><br>
+            <li>Staff Number:<br></li>
+             <input type="text" name="staffnumber">
+            </form>
              <li>Have you worked in this department?</li>
                <button id = "infoyes" type="button" name="button">Yes</button>
                <button id = "infono"  type="button" name="button"> No</button>
@@ -29,8 +28,39 @@
                <form> Date
                  <input type="date" name="leavingdate">
                </form>
+              <li>Name of Supervisor</li>
+                 <form>
+                   <input type="text" name="supervisor">
+                 </form></br>
              <li>List of company assets issued:</li>
-               <input type="text" name="books">
+               <table "table-responsive">
+                  <tr>
+                    <th>Item Name  </th>
+                    <th>Date Issued</th>
+                    <th>Make and Model</th>
+                    <th>Date Returned</th>
+                  </tr>
+
+                   <tr>
+                      <td> Laptops </td>
+                      <td> <input type="date" name="issuedate"></td>
+                      <td> <input type="text" name= "Make/Model"></td>
+                      <td> <input type="date" name= "Returndate"></td>
+                    </tr>
+                    <tr>
+                     <td>Mobile Phone </td>
+                      <td> <input type="date" name="issuedate"></td>
+                      <td> <input type="text" name= "Make/Model"> </td>
+                      <td> <input type="date" name= "Returndate"></td>
+                    </tr>
+                    <tr>
+                     <td>Tablet</td>
+                     <td> <input type="date" name="issuedate"></td>
+                     <td> <input type="text" name= "Make/Model"></td>
+                     <td> <input type="date" name= "Returndate"></td>
+                 </tr>
+             </table>
+
            </ol>
            <p><strong> Note.</strong>Provision of inaccurate or false data on
              this form could greatly hamper the processing of your clearance request</p>
