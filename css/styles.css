@@ -6,5 +6,16 @@ body{
   font-family:  'Cormorant Garamond', serif;
 }
 .form-group{
-  font-size: 32px;
+  font-size: 20px;
+}
+.yesno{
+  font-size: 20px;
+}
+.details{
+  font-size: 20px;
+}
+.color{
+  background-image: url("../assets/img/header2.jpg");
+  background-size: cover;
+  color: white;
 }
