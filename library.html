@@ -6,28 +6,38 @@
     <title>library Department</title>
   </head>
   <body>
-    <div class "lib"= "jumbotron">
-      <h1>Library Department's Clearance Form</h1>
-        <div class="row-col-sm-6">
-          <img src="/img/books"></img>
+     <div class ="container" id="lib1">
+
+        <div class = "jumbotron" id="lib2">
+          <h1>Library Department's Clearance Form</h1>
+
         </div>
-      </div>
-        <p>Fill out the following form and submit it with accurate information for the clearance process to go on.</p>
-          <ol>
-            <form>
-            <li>Full Name:<br></li>
-              <input type="text" name="fullname"><br>
-            <li>Staff Number:<br></li>
-              <input type="text" name="staffnumber">
-            </form>
-            <li>Have you worked in this department?</li>
-              <button id = "yes" type="button" name="button">Yes</button>
-              <button id = "no"  type="button" name="button"> No</button>
-            <li>Date of joining</li>
-              <input type="date" name="joiningdate" t">
 
+          <p>Fill out the following form and submit it with accurate information for the clearance process to go on.</p>
+            <ol>
+              <form>
+              <li>Full Name:<br></li>
+                <input type="text" name="fullname"><br>
+              <li>Staff Number:<br></li>
+                <input type="text" name="staffnumber">
               </form>
-          </ol>
-
-  </body>
-</html>
+              <li>Have you worked in this department?</li>
+                <button id = "yes" type="button" name="button">Yes</button>
+                <button id = "no"  type="button" name="button"> No</button>
+              <li>Date of joining</li>
+                <form> Date:
+                  <input type="date" name="joiningdate">
+                </form>
+              <li>Date of leaving</li>
+                <form> Date
+                  <input type="date" name="leavingdate">
+                </form>
+              <li>List of company books and publications in your posession:</li>
+                <input type="text" name="books">
+            </ol>
+            <p><strong> Note.</strong>Provision of inaccurate or false data on
+              this form could greatly hamper the processing of your clearance request</p>
+              <button id = "submit" type="submit" name="button">submit</button>
+        </div>
+    </body>
+  </html>
