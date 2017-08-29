@@ -3,19 +3,28 @@
   background-size: cover;
 }
 body{
-  font-family:  'Cormorant Garamond', serif;
+  font-family: 'Prociono', serif;
 }
 .form-group{
-  font-size: 20px;
+  font-size: 16px;
 }
 .yesno{
-  font-size: 20px;
+  font-size: 16px;
 }
 .details{
-  font-size: 20px;
+  font-size: 16px;
 }
 .color{
-  background-image: url("../assets/img/header2.jpg");
   background-size: cover;
+  background-image: url("../assets/img/header2.jpg");
   color: white;
+  font-family: 'Pacifico', cursive;
+}
+.foot1{
+  background-image: url("../assets/img/blue.jpg");
+  color: white;
+  background-size: cover;
+}
+.logo{
+  text-align: center;
 }
