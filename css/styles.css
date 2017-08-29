@@ -9,6 +9,58 @@ padding-top: 10px;
 thead{
   color: #f27b35;
 }
+
+#lib2 {
+  background-image: url("../assets/img/books.jpg");
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+
+}
+
+#heading {
+  font-size: 40px;
+  font-weight:bolder;
+  color:black;
+  float:right;
+  height:inherit;
+  }
+
+#info2 {
+  background-image: url("../assets/img/code.gif");
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
+  padding-bottom: 140px;
+}
+
+#libbody {
+  font-family: "prociono"; font-size: 16px;
+  background-color: #BB8B5A
+
+}
+
+#libyes {
+  color: #596e7c;
+}
+
+#libno {
+  color: #596e7c;
+}
+
+#libsubmit {
+  color: #596e7c;
+  margin-bottom: 80px;
+
+}
+
+#infosubmit {
+  margin-bottom: 80px;
+}
+
+
+#infobody {
+  font-family: "prociono"; font-size: 16px;
+  background-color:  #9da3ad;
 body{
   font-family: 'Prociono', serif;
   font-size: 16px;
@@ -17,6 +69,8 @@ body{
 #button-2{
   float: right;
 
+img {
+  padding-bottom: 30px;
 }
 .footer {
   right: 0;
