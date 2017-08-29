@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.google.com/specimen/Prociono?selection.family=Prociono" rel="stylesheet"></link>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Information Systems</title>
+    <title>Information Systems</title></br></br>
   </head>
+
   <body>
       <div class ="container" id="info1">
        <div class = "jumbotron" id="info2"></div> </br>
-         <h1>I.S. Department Clearance Form</h1>
+         <h1>I.S. Department Clearance Form</h1></br>
            <p>Fill out the following form and submit it with accurate information for your clearance process to commence.</p></br>
           <ol>
            <form>
-            <li>Full Name:<br></li>
-             <input type="text" name="fullname"><br>
-            <li>Staff Number:<br></li>
-             <input type="text" name="staffnumber">
+            <li>Full Name:</li>
+             <input type="text" name="fullname"></br>
+            <li>Staff Number:</li>
+             <input type="text" name="staffnumber"></br>
            </form></br>
+            <div id = "buttonsinfo">
              <li>Have you worked in this department?</li>
                <button id = "infoyes" type="button" name="button">Yes</button>
-               <button id = "infono"  type="button" name="button"> No</button></br>
+               <button id = "infono"  type="button" name="button"> No</button>
+            </div></br>
              <li>Date of joining</li>
-               <form> 
+               <form>
                  <input type="date" name="joiningdate">
                </form></br>
              <li>Date of leaving</li>
                <form>
                  <input type="date" name="leavingdate">
-               </form>
+               </form></br>
               <li>Name of Supervisor</li>
                  <form>
                  <input type="text" name="supervisor">
-               </form></br>
+               </form></br></br>
              <li>List of company assets issued:</li>
                <table "table-responsive">
                   <tr>
@@ -59,7 +63,7 @@
                    <td> <input type="date" name= "Returndate"></td>
                  </tr>
                </table>
-             </ol>
+             </ol></br>
            <p><strong> Note.</strong>Provision of inaccurate or false data on
              this form could greatly hamper the processing of your clearance request</p>
              <button id = "infosubmit" type="submit" name="button">submit</button>
