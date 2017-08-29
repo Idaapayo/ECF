@@ -1,38 +1,59 @@
+
+
+
 #lib2 {
   background-image: url("../assets/img/books.jpg");
-  background-size: cover;
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
   padding-bottom: 150px;
-  border-width:thick;
-  border-color:  #596e7c
+
 }
 
-
 #heading {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight:bolder;
   color:black;
-  align-items: center;
+  float:right;
+  height:inherit;
   }
 
 #info2 {
   background-image: url("../assets/img/code.gif");
-  background-size: cover;
-  padding-bottom: 150px;
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
+  padding-bottom: 140px;
 }
 
-body {
+#libbody {
   font-family: "prociono"; font-size: 16px;
-  background-color:
+  background-color: #BB8B5A
 
-}
-.form-row {
-  display: flex;
-  flex:1;
 }
 
 #libyes {
-  color: #596e7c
+  color: #596e7c;
 }
 
 #libno {
-  color: #596e7c
+  color: #596e7c;
+}
+
+#libsubmit {
+  color: #596e7c;
+  margin-bottom: 80px;
+
+}
+
+#infosubmit {
+  margin-bottom: 80px;
+}
+
+
+#infobody {
+  font-family: "prociono"; font-size: 16px;
+  background-color:  #9da3ad;
+}
+
+img {
+  padding-bottom: 80px;
 }
