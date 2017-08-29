@@ -1,9 +1,37 @@
-.jumbotron {
+#lib2 {
   background-image: url("../assets/img/books.jpg");
   background-size: cover;
+  padding-bottom: 150px;
+  border-width: 50px;
+  border-color:  #596e7c
 }
 
-.jumbotron .h1 {
-  font-size: 8;
-  cle
+
+#heading {
+  font-size: 30px;
+  color:black;
+  align-items: center;
+  }
+
+#info2 {
+  background-image: url("../assets/img/code.gif");
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+body {
+  font-family: "prociono"; font-size: 16px;
+  background-color:
+}
+.form-row {
+  display: flex;
+  flex:1;
+}
+
+#libyes {
+  color: #596e7c
+}
+
+#libno {
+  color: #596e7c
 }
