@@ -68,9 +68,6 @@ body{
 }
 #button-2{
   float: right;
-
-img {
-  padding-bottom: 30px;
 }
 .footer {
   right: 0;
@@ -85,33 +82,33 @@ img {
   background-image: url("../assets/img/footer2.jpg");
   background-size: cover;
 }
-body{
+body {
   font-family: 'Prociono', serif;
 }
-.form-group{
+/*.form-group {
   font-size: 16px;
 }
-.yesno{
+.yesno {
   font-size: 16px;
 }
-.details{
+.details {
   font-size: 16px;
-}
-.color{
+}*/
+.color {
   background-size: cover;
   background-image: url("../assets/img/header2.jpg");
   color: white;
   font-family: 'Pacifico', cursive;
 }
-.foot1{
+.foot1 {
   background-image: url("../assets/img/blue.jpg");
   color: white;
   background-size: cover;
 }
-.logo{
+.logo {
   text-align: center;
 }
-.topnav{
+.topnav {
   float: right;
   background-color: black;
   font-weight: bold;
@@ -120,7 +117,7 @@ body{
   color: white;
 }
 
-.jumbotron1{
+.jumbotron1 {
   background-color: black;
   background-repeat: no-repeat
   color: white;
@@ -129,50 +126,81 @@ body{
   border-style: groove;
 }
 
-body{
+body {
   font-family: 'Prociono', sans-serif;
   background-repeat: no-repeat;
-  background-image: url("../images/erie.JPG");
+  background-image: url("..assets/images/erie.JPG");
 
 }
 
-h1{
+h1 {
   text-align: center;
-  font-size: 65px;
+  font-size: 12px;
   color: white;
 }
 
-h2{
+h2 {
   text-align: center;
   color: white;
 
 }
-.jumbotron3{
+.jumbotron3 {
   margin: auto;
   font-size: 20px;
   border-style: groove;
   color: inherit;
 }
 
-.jumbotron2{
+.jumbotron {
   font-size: 20px;
   color: white;
 }
 
-.heading{
+.heading {
   float: left;
   color: white;
 
 }
-footer{
+footer {
   text-align: center;
   color:white;
   font-weight: bold;
 }
-.container{
+.container {
    margin: auto;
    border-style: groove;
    font-size: 20px;
    color: white;
+   
 
  }
+ .foot{
+  background-image: url("../assets/img/footer2.jpg");
+  background-size: cover;
+}
+body{
+  font-family: 'Prociono', serif;
+}
+.form-group{
+  font-size: 16px;
+}
+#yesno{
+  font-size: 16px;
+}
+#details{
+  font-size: 16px;
+}
+#color{
+  background-size: cover;
+  background-image: url("../assets/img/header2.jpg");
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+#foot1{
+  background-image: url("../assets/img/blue.jpg");
+  color: white;
+  background-size: cover;
+}
+#logo{
+  text-align: center;
+}
