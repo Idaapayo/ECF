@@ -1,35 +1,15 @@
-<<<<<<< HEAD
 $(document).ready(function () {
   $("form#employee-names").submit(function (event) {
     event.preventDefault();
-    var inputtedName = $("input#employee-name").val();
-    var inputtedSerial =$("input#employee-serial").val();
+    var inputtedName = $("input#username").val();
+    var inputtedSerial =$("input#staffno").val();
+    var inputtedDepart = $("input#depart").val();
 
-    $(".employee-name").text(inputtedName);
-    $(".employee-serial").text(inputtedSerial);
+    $(".username").text(inputtedName);
+    $(".staffno").text(inputtedSerial);
+    $(".depart").text(inputtedDepart);
 
 
   })
 
 });
-=======
-//business logic//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//front-end logic//
-document.ready(function(event())
-event
->>>>>>> c6c82e8586a0d5ee93e78ae9979a2cb5ebb30188
