@@ -171,7 +171,7 @@ footer {
    border-style: groove;
    font-size: 20px;
    color: white;
-   
+
 
  }
  .foot{
@@ -203,4 +203,8 @@ body{
 }
 #logo{
   text-align: center;
+}
+.one {
+  display: none;
+}
 }

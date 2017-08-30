@@ -60,22 +60,27 @@
               <ol>
                 <li>Have you worked in this department?:</li>
                 <form id="questions">
-                  <input type="radio" name="optradio">Yes<br>
-                  <input type="radio" name="optradio">No
+                  <input type="radio" name="optradio" class="yes">Yes<br>
+                  <input type="radio" name="optradio" class="no">No
                   <br><br>
                   <li>
+                    <div class="dates">
                     <ul>
                       <li>Start Date:</li>
-                      <input type="date">
+                      <input type="date" class="start">
                       <li>End Date:</li>
-                      <input type="date">
+                      <input type="date" class="end">
                     </ul>
+                    </div>
                   </li><br><br>
+                  <div class="dates">
                   <li>Name of Supervisor:</li>
                   <div class="form-group">
                     <label for="supervisor"></label>
-                    <input type="text" class="">
-                  </div><br><br>
+                    <input type="text" class="supervisor">
+                    </div>
+                    </div>
+                  <br><br>
 
                   <li>List of company issued assets</li>
                   <div class="table-responsive">
@@ -92,20 +97,20 @@
                         <tr>
                           <td><strong>Car loan</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input type="text" value=""></td>
-                          <td><input type="text" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
                         </tr>
                         <tr>
                           <td><strong>House loan</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input type="text" value=""></td>
-                          <td><input type="text" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
                         </tr>
                         <tr>
                           <td><strong>Salary advance</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input type="text" value=""></td>
-                          <td><input type="text" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
                         </tr>
 
                       </tbody>
@@ -145,26 +150,14 @@
             <div class="staffno"></div>
             <strong>DEPARTMENT:</strong>
             <div class="depart"></div> <br>
-
-            <!-- <form id="hr">
-          <div class="form-group">
-          <label for="name">Your name:</label>
-          <input type="text" class="form-control" id="name">
-        </div>
-        <div class="form-group">
-          <label for="staffnumber">Enter your staff number</label>
-            <input type="text" class="form-control" id="staffnumber">
-          </div>
-          <button type="submit" name="button" class="btn btn-primary">submit</button>
-        </form> -->
             <form id="checkbox">
               <div class="yesno">
                 <div align="left"><br>
                   <ul>
                     <li>Have you worked in this department?</li>
 
-                    <input type="radio" value="yes" name="optradio"> YES<br>
-                    <input type="radio" value="no" name="optradio"> NO<br>
+                    <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                    <input type="radio" value="no" name="optradio" class="no"> NO<br>
                   </ul>
                   <br>
                 </div>
@@ -248,11 +241,19 @@
               <p>Fill out the following form and submit it with accurate information for your clearance process to commence.</p>
               </br>
               <ol>
-                <div id="buttonsinfo">
-                  <li>Have you worked in this department?</li>
-                  <button id="infoyes" type="button" name="button">Yes</button>
-                  <button id="infono" type="button" name="button"> No</button>
-                </div>
+                <form id="checkbox">
+                 <div class="yesno">
+                   <div align="left"><br>
+
+                       <li>Have you worked in this department?</li>
+
+                       <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
+                       <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+
+                     <br>
+                 </div>
+
+                 </form>
                 </br>
                 <li>Date of joining</li>
                 <form>
@@ -341,8 +342,8 @@
                 <div align="left"><br>
                   <ul>
                     <li>Have you worked in this department?</li>
-                    <input type="radio" value="yes" name="optradio"> YES<br>
-                    <input type="radio" value="no" name="optradio"> NO<br>
+                    <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                    <input type="radio" value="no" name="optradio" class="no"> NO<br>
                   </ul>
                   <br>
                 </div>
@@ -401,13 +402,32 @@
 
             <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
             </br>
-            <ol>
-              <div class="buttons">
-                <li>Have you worked in this department?</li>
-                </br>
-                <button id="libyes" type="button" name="button">Yes</button>
-                <button id="libno" type="button" name="button"> No</button>
-              </div>
+
+            <!-- <form id="hr">
+          <div class="form-group">
+          <label for="name">Your name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="staffnumber">Enter your staff number</label>
+            <input type="text" class="form-control" id="staffnumber">
+          </div>
+          <button type="submit" name="button" class="btn btn-primary">submit</button>
+        </form> -->
+        <ol>
+              <form id="checkbox">
+               <div class="yesno">
+                 <div align="left"><br>
+
+                     <li>Have you worked in this department?</li>
+
+                     <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
+                     <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+
+                   <br>
+               </div>
+
+               </form>
               </br>
 
               <li>Date of joining</li>
