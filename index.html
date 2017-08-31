@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,21 +64,21 @@
                   <br><br>
                   <li>
                     <div class="dates">
-                    <ul>
-                      <li>Start Date:</li>
-                      <input type="date" class="start">
-                      <li>End Date:</li>
-                      <input type="date" class="end">
-                    </ul>
+                      <ul>
+                        <li>Start Date:</li>
+                        <input type="date" class="start">
+                        <li>End Date:</li>
+                        <input type="date" class="end">
+                      </ul>
                     </div>
                   </li><br><br>
                   <div class="dates">
-                  <li>Name of Supervisor:</li>
-                  <div class="form-group">
-                    <label for="supervisor"></label>
-                    <input type="text" class="supervisor">
+                    <li>Name of Supervisor:</li>
+                    <div class="form-group">
+                      <label for="supervisor"></label>
+                      <input type="text" class="supervisor">
                     </div>
-                    </div>
+                  </div>
                   <br><br>
 
                   <li>List of company issued assets</li>
@@ -97,26 +96,28 @@
                         <tr>
                           <td><strong>Car loan</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input id="disbursed"type="text" value=""></td>
-                          <td><input id="repaid"type="text" value=""></td>
+                          <td><input id="disbursed" type="text" value=""></td>
+                          <td><input id="repaid" type="text" value=""></td>
                         </tr>
                         <tr>
                           <td><strong>House loan</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input id="disbursed"type="text" value=""></td>
-                          <td><input id="repaid"type="text" value=""></td>
+                          <td><input id="disbursed" type="text"></td>
+                          <td><input id="repaid" type="text" value=""></td>
                         </tr>
                         <tr>
                           <td><strong>Salary advance</strong></td>
                           <td><input type="date" value=""></td>
-                          <td><input id="disbursed"type="text" value=""></td>
-                          <td><input id="repaid"type="text" value=""></td>
+                          <td><input id="disbursed" type="text" value=""></td>
+                          <td><input id="repaid" type="text" value=""></td>
                         </tr>
 
                       </tbody>
                     </table>
               </ol>
+
               <button type="submit" id="button-2" name="button" class="btn btn-info">Submit</button>
+              </form>
 
               </div>
               <div class="modal-footer">
@@ -161,49 +162,72 @@
                   </ul>
                   <br>
                 </div>
-
+                <div class="details">
+                  <div class="dates">
+                    <div class="form group">
+                      <label for="startdate">Start Date:</label>
+                      <input type="date" class="form-control" id="startdate">
+                    </div>
+                    <div class="form group">
+                      <label for="enddate">End Date:</label>
+                      <input type="date" class="form-control" id="enddate">
+                    </div>
+                    <div class="form group">
+                      <label for="nameofsupervisor">Name of your supervisor:</label>
+                      <input type="text" class="form-control" id="supervisor">
+                    </div>
+                  </div>
+                  <div class="form group">
+                    <label for="reasonforleaving">Your reason for leaving:</label>
+                    <input type="text" class="form-control" id="leaving">
+                  </div>
+                  <p>List of company issued assets</p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h2>Name</h2>
+                      <ul>Company ID</ul>
+                      <ul>House</ul>
+                      <ul>Company Car</ul>
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Returned </h2>
+                      <div class="form-group">
+                        <div>
+                          <label for="rid">
+                        <input id= "rid" type="checkbox" name="option1"  value="returned">
+                        Returned
+                      </label>
+                        </div>
+                        <div>
+                          <label for="rhouse">
+                        <input id= "rhouse"type="checkbox" name="option1" value="returned"> Returned
+                      </label>
+                        </div>
+                        <div>
+                          <label for="rcar">
+                      <input id= "rcar" type="checkbox" name="option1" value="returned"> Returned
+                        </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Unreturned </h2>
+                    <div>
+                      <label for="uid">
+                        <input id="uid" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
+                      </div>
+                      <div>
+                        <label for="uhouse">
+                      <input id="uhouse" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
+                    </div>
+                    <div>
+                      <label for="ucar">
+                      <input id="ucar" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
+                    </div>
+                  </div>
+                </div>
+                  <button type="submit" name="button" class="btn btn-primary">submit</button>
             </form>
-            <div class="details">
-              <form id="details">
-                <div class="form group">
-                  <label for="startdate">Start Date:</label>
-                  <input type="text" class="form-control" id="startdate">
-                </div>
-                <div class="form group">
-                  <label for="enddate">End Date:</label>
-                  <input type="text" class="form-control" id="enddate">
-                </div>
-                <div class="form group">
-                  <label for="nameofsupervisor">Name of your supervisor:</label>
-                  <input type="text" class="form-control" id="supervisor">
-                </div>
-                <div class="form group">
-                  <label for="reasonforleaving">Your reason for leaving:</label>
-                  <input type="text" class="form-control" id="leaving">
-                </div>
-                <p>List of company issued assets</p>
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>Name</h3>
-                    <ul>Company ID</ul>
-                    <ul>House</ul>
-                    <ul>Company Car</ul>
-                  </div>
-                  <div class="col-md-4">
-                    <h2>Returned Items</h2>
-                    <input type="checkbox" name="option1" value="returned"> Returned<br>
-                    <input type="checkbox" name="option1" value="returned"> Returned<br>
-                    <input type="checkbox" name="option1" value="returned"> Returned<br>
-                  </div>
-                  <div class="col-md-4">
-                    <h2>Unreturned Items</h2>
-                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
-                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
-                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
-                  </div>
-                </div>
-                <button type="submit" name="button" class="btn btn-primary">submit</button>
-              </form>
 
 
             </div>
@@ -242,18 +266,18 @@
               </br>
               <ol>
                 <form id="checkbox">
-                 <div class="yesno">
-                   <div align="left"><br>
+                  <div class="yesno">
+                    <div align="left"><br>
 
-                       <li>Have you worked in this department?</li>
+                      <li>Have you worked in this department?</li>
 
-                       <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
-                       <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+                      <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                      <input type="radio" value="no" name="optradio" class="no"> NO<br>
 
-                     <br>
-                 </div>
+                      <br>
+                    </div>
 
-                 </form>
+                </form>
                 </br>
                 <li>Date of joining</li>
                 <form>
@@ -304,106 +328,106 @@
               <button type="submit" id="button-2" name="button" class="btn btn-info">Submit</button>
 
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+              </div>
             </div>
+
           </div>
-
         </div>
+
       </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal5">Marketing Department</button>
 
-    </div>
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal5">Marketing Department</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal5" role="dialog">
-      <div class="modal-dialog">
-
-        <!--  Marketing Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title">Marketing Department</h2>
-          </div>
-          <div class="modal-body">
-            <strong>USERNAME:</strong>
-            <div class="username"></div>
-            <strong>STAFF NUMBER:</strong>
-            <div class="staffno"></div>
-            <strong>DEPARTMENT:</strong>
-            <div class="depart"></div> <br>
+          <!--  Marketing Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Marketing Department</h2>
+            </div>
+            <div class="modal-body">
+              <strong>USERNAME:</strong>
+              <div class="username"></div>
+              <strong>STAFF NUMBER:</strong>
+              <div class="staffno"></div>
+              <strong>DEPARTMENT:</strong>
+              <div class="depart"></div> <br>
 
 
-            <form id="checkbox">
-              <div class="yesno">
-                <div align="left"><br>
-                  <ul>
-                    <li>Have you worked in this department?</li>
-                    <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
-                    <input type="radio" value="no" name="optradio" class="no"> NO<br>
-                  </ul>
-                  <br>
-                </div>
+              <form id="checkbox">
+                <div class="yesno">
+                  <div align="left"><br>
+                    <ul>
+                      <li>Have you worked in this department?</li>
+                      <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                      <input type="radio" value="no" name="optradio" class="no"> NO<br>
+                    </ul>
+                    <br>
+                  </div>
 
-            </form>
-            <br>
-            <div class="details">
-              <form id="details">
-                <div class="form group">
-                  <label for="startdate">Start Date:</label>
-                  <input type="text" class="form-control" id="startdate">
-                </div>
-                <div class="form group">
-                  <label for="enddate">End Date:</label>
-                  <input type="text" class="form-control" id="enddate">
-                </div>
-                <div class="form group">
-                  <label for="nameofsupervisor">Name of your supervisor:</label>
-                  <input type="text" class="form-control" id="supervisor">
-                </div>
-                <br>
-                <button type="submit" name="button" class="btn btn-primary">submit</button>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <br>
+              <div class="details">
+                <form id="details">
+                  <div class="form group">
+                    <label for="startdate">Start Date:</label>
+                    <input type="text" class="form-control" id="startdate">
+                  </div>
+                  <div class="form group">
+                    <label for="enddate">End Date:</label>
+                    <input type="text" class="form-control" id="enddate">
+                  </div>
+                  <div class="form group">
+                    <label for="nameofsupervisor">Name of your supervisor:</label>
+                    <input type="text" class="form-control" id="supervisor">
+                  </div>
+                  <br>
+                  <button type="submit" name="button" class="btn btn-primary">submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+              </div>
+              </div>
 
             </div>
-            </div>
-
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6">Library Department</button>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6">Library Department</button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal6" role="dialog">
-      <div class="modal-dialog">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
 
-        <!--  LIBRARY Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title">Library Department</h2>
-          </div>
-          <div class="modal-body">
-            <strong>USERNAME:</strong>
-            <div class="username"></div>
-            <strong>STAFF NUMBER:</strong>
-            <div class="staffno"></div>
-            <strong>DEPARTMENT:</strong>
-            <div class="depart"></div> <br>
+          <!--  LIBRARY Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Library Department</h2>
+            </div>
+            <div class="modal-body">
+              <strong>USERNAME:</strong>
+              <div class="username"></div>
+              <strong>STAFF NUMBER:</strong>
+              <div class="staffno"></div>
+              <strong>DEPARTMENT:</strong>
+              <div class="depart"></div> <br>
 
-            <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
-            </br>
+              <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
+              </br>
 
-            <!-- <form id="hr">
+              <!-- <form id="hr">
           <div class="form-group">
           <label for="name">Your name:</label>
           <input type="text" class="form-control" id="name">
@@ -414,82 +438,82 @@
           </div>
           <button type="submit" name="button" class="btn btn-primary">submit</button>
         </form> -->
-        <ol>
-              <form id="checkbox">
-               <div class="yesno">
-                 <div align="left"><br>
+              <ol>
+                <form id="checkbox">
+                  <div class="yesno">
+                    <div align="left"><br>
 
-                     <li>Have you worked in this department?</li>
+                      <li>Have you worked in this department?</li>
 
-                     <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
-                     <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+                      <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                      <input type="radio" value="no" name="optradio" class="no"> NO<br>
 
-                   <br>
-               </div>
+                      <br>
+                    </div>
 
-               </form>
-              </br>
-
-              <li>Date of joining</li>
-              <form>
-                <input type="date" name="joiningdate">
-              </form>
-              </br>
-
-              <li>Date of leaving</li>
-              <form>
-                <input type="date" name="leavingdate">
-              </form>
-              </br>
-              <li>Name of Supervisor
-                <form>
-                  <input type="text" name="supervisor">
                 </form>
                 </br>
-                <div id="liblist">
-                  <li> List of library books and media in your posession</li>
+
+                <li>Date of joining</li>
+                <form>
+                  <input type="date" name="joiningdate">
+                </form>
+                </br>
+
+                <li>Date of leaving</li>
+                <form>
+                  <input type="date" name="leavingdate">
+                </form>
+                </br>
+                <li>Name of Supervisor
+                  <form>
+                    <input type="text" name="supervisor">
+                  </form>
                   </br>
-                  <textarea name="listed items" rows="10" cols="30">
+                  <div id="liblist">
+                    <li> List of library books and media in your posession</li>
+                    </br>
+                    <textarea name="listed items" rows="10" cols="30">
           </textarea>
-            </ol>
-            </br>
+              </ol>
+              </br>
 
-            <button type="submit" id="button-6" name="button" class="btn btn-info">Submit</button>
+              <button type="submit" id="button-6" name="button" class="btn btn-info">Submit</button>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+              </div>
+              </div>
 
             </div>
           </div>
 
         </div>
+
+
+
+
       </div>
 
-    </div>
+      <div class="container">
+        <h3>Pending Issues</h3>
+        <h4>Departments</h4>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
 
 
+      <footer>
+        <p>FAIDA&#169;2017</p>
 
-
-  </div>
-
-  <div class="container">
-    <h3>Pending Issues</h3>
-    <h4>Departments</h4>
-    <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
-  </div>
-
-
-  <footer>
-    <p>Copyright</p>
-    <p>2017</p>
-  </footer>
+      </footer>
 
 </body>
 
