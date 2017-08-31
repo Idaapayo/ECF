@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <title>ECF</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <header class="heading"> <img src="assets/images/final.png"></header>
+    <div class="topnav" id="myTopnav">
+      <a href="#help">HELP</a>
+      <a href="#faqs">FAQ's</a>
+    </div>
+
+    <h1>FAIDA SOFTWARE DEVELOPERS </h1>
+    <span>Moringa Ltd.</span>
+  </div>
+  <div class="jumbotron"><br>
+    <form id="employee-names" action="index.html" method="get">
+      <p><strong>Username:</strong><br><input id="username" type="text"></p>
+      <p><strong>Employee-number:</strong><br><input id="staffno" type="number"></p>
+      <p><strong>Department:</strong><br><input id="depart" type="text"></p><br>
+      <input type="submit" class="btn btn-success" value="Submit">
+    </form>
+  </div>
+  <div class="jumbotron3">
+    <div class="container">
+      <h2>DEPARTMENTS</h2>
+
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Finance Department</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- FINANCE Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Finance Department</h2>
+            </div>
+            <div class="modal-body">
+              <strong>USERNAME:</strong>
+              <div class="username"></div>
+              <strong>STAFF NUMBER:</strong>
+              <div class="staffno"></div>
+              <strong>DEPARTMENT:</strong>
+              <div class="depart"></div> <br>
+              <ol>
+                <li>Have you worked in this department?:</li>
+                <form id="questions">
+                  <input type="radio" name="optradio" class="yes">Yes<br>
+                  <input type="radio" name="optradio" class="no">No
+                  <br><br>
+                  <li>
+                    <div class="dates">
+                    <ul>
+                      <li>Start Date:</li>
+                      <input type="date" class="start">
+                      <li>End Date:</li>
+                      <input type="date" class="end">
+                    </ul>
+                    </div>
+                  </li><br><br>
+                  <div class="dates">
+                  <li>Name of Supervisor:</li>
+                  <div class="form-group">
+                    <label for="supervisor"></label>
+                    <input type="text" class="supervisor">
+                    </div>
+                    </div>
+                  <br><br>
+
+                  <li>List of company issued assets</li>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Date Issued</th>
+                          <th>Amount Disbursed</th>
+                          <th>Amount Repaid</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Car loan</strong></td>
+                          <td><input type="date" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
+                        </tr>
+                        <tr>
+                          <td><strong>House loan</strong></td>
+                          <td><input type="date" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Salary advance</strong></td>
+                          <td><input type="date" value=""></td>
+                          <td><input id="disbursed"type="text" value=""></td>
+                          <td><input id="repaid"type="text" value=""></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+              </ol>
+              <button type="submit" id="button-2" name="button" class="btn btn-info">Submit</button>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Human Resource Department</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- H-R Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Human Resource Department</h2>
+            </div>
+            <div class="modal-body">
+            </div>
+            <strong>USERNAME:</strong>
+            <div class="username"></div>
+            <strong>STAFF NUMBER:</strong>
+            <div class="staffno"></div>
+            <strong>DEPARTMENT:</strong>
+            <div class="depart"></div> <br>
+            <form id="checkbox">
+              <div class="yesno">
+                <div align="left"><br>
+                  <ul>
+                    <li>Have you worked in this department?</li>
+
+                    <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                    <input type="radio" value="no" name="optradio" class="no"> NO<br>
+                  </ul>
+                  <br>
+                </div>
+
+            </form>
+            <div class="details">
+              <form id="details">
+                <div class="form group">
+                  <label for="startdate">Start Date:</label>
+                  <input type="text" class="form-control" id="startdate">
+                </div>
+                <div class="form group">
+                  <label for="enddate">End Date:</label>
+                  <input type="text" class="form-control" id="enddate">
+                </div>
+                <div class="form group">
+                  <label for="nameofsupervisor">Name of your supervisor:</label>
+                  <input type="text" class="form-control" id="supervisor">
+                </div>
+                <div class="form group">
+                  <label for="reasonforleaving">Your reason for leaving:</label>
+                  <input type="text" class="form-control" id="leaving">
+                </div>
+                <p>List of company issued assets</p>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>Name</h3>
+                    <ul>Company ID</ul>
+                    <ul>House</ul>
+                    <ul>Company Car</ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h2>Returned Items</h2>
+                    <input type="checkbox" name="option1" value="returned"> Returned<br>
+                    <input type="checkbox" name="option1" value="returned"> Returned<br>
+                    <input type="checkbox" name="option1" value="returned"> Returned<br>
+                  </div>
+                  <div class="col-md-4">
+                    <h2>Unreturned Items</h2>
+                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+                    <input type="checkbox" name="option1" value="unreturned"> Unreturned<br>
+                  </div>
+                </div>
+                <button type="submit" name="button" class="btn btn-primary">submit</button>
+              </form>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal4">IS Department</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+          <!--INFO  Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Info Systems Department</h2>
+            </div>
+            <div class="modal-body">
+              <strong>USERNAME:</strong>
+              <div class="username"></div>
+              <strong>STAFF NUMBER:</strong>
+              <div class="staffno"></div>
+              <strong>DEPARTMENT:</strong>
+              <div class="depart"></div> <br>
+
+              <p>Fill out the following form and submit it with accurate information for your clearance process to commence.</p>
+              </br>
+              <ol>
+                <form id="checkbox">
+                 <div class="yesno">
+                   <div align="left"><br>
+
+                       <li>Have you worked in this department?</li>
+
+                       <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
+                       <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+
+                     <br>
+                 </div>
+
+                 </form>
+                </br>
+                <li>Date of joining</li>
+                <form>
+                  <input type="date" name="joiningdate">
+                </form>
+                </br>
+                <li>Date of leaving</li>
+                <form>
+                  <input type="date" name="leavingdate">
+                </form>
+                </br>
+                <li>Name of Supervisor</li>
+                <form>
+                  <input type="text" name="supervisor">
+                </form>
+                </br>
+                </br>
+                <li>List of company assets issued:</li>
+                <table "table-responsive">
+                  <tr>
+                    <th>Item Name </th>
+                    <th>Date Issued</th>
+                    <th>Make and Model</th>
+                    <th>Date Returned</th>
+                  </tr>
+                  <tr>
+                    <td> Laptops </td>
+                    <td> <input type="date" name="issuedate"></td>
+                    <td> <input type="text" name="Make/Model"></td>
+                    <td> <input type="date" name="Returndate"></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile Phone </td>
+                    <td> <input type="date" name="issuedate"></td>
+                    <td> <input type="text" name="Make/Model"> </td>
+                    <td> <input type="date" name="Returndate"></td>
+                  </tr>
+                  <tr>
+                    <td>Tablet</td>
+                    <td> <input type="date" name="issuedate"></td>
+                    <td> <input type="text" name="Make/Model"></td>
+                    <td> <input type="date" name="Returndate"></td>
+                  </tr>
+                </table>
+              </ol>
+              </br>
+              <p><strong> Note.</strong>Provision of inaccurate or false data on this form could greatly hamper the processing of your clearance request</p>
+              <button type="submit" id="button-2" name="button" class="btn btn-info">Submit</button>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal5">Marketing Department</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" role="dialog">
+      <div class="modal-dialog">
+
+        <!--  Marketing Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Marketing Department</h2>
+          </div>
+          <div class="modal-body">
+            <strong>USERNAME:</strong>
+            <div class="username"></div>
+            <strong>STAFF NUMBER:</strong>
+            <div class="staffno"></div>
+            <strong>DEPARTMENT:</strong>
+            <div class="depart"></div> <br>
+
+
+            <form id="checkbox">
+              <div class="yesno">
+                <div align="left"><br>
+                  <ul>
+                    <li>Have you worked in this department?</li>
+                    <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
+                    <input type="radio" value="no" name="optradio" class="no"> NO<br>
+                  </ul>
+                  <br>
+                </div>
+
+            </form>
+            <br>
+            <div class="details">
+              <form id="details">
+                <div class="form group">
+                  <label for="startdate">Start Date:</label>
+                  <input type="text" class="form-control" id="startdate">
+                </div>
+                <div class="form group">
+                  <label for="enddate">End Date:</label>
+                  <input type="text" class="form-control" id="enddate">
+                </div>
+                <div class="form group">
+                  <label for="nameofsupervisor">Name of your supervisor:</label>
+                  <input type="text" class="form-control" id="supervisor">
+                </div>
+                <br>
+                <button type="submit" name="button" class="btn btn-primary">submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6">Library Department</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal6" role="dialog">
+      <div class="modal-dialog">
+
+        <!--  LIBRARY Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Library Department</h2>
+          </div>
+          <div class="modal-body">
+            <strong>USERNAME:</strong>
+            <div class="username"></div>
+            <strong>STAFF NUMBER:</strong>
+            <div class="staffno"></div>
+            <strong>DEPARTMENT:</strong>
+            <div class="depart"></div> <br>
+
+            <p>Fill out the following form and submit it with accurate information for the clearance process to commence.</p>
+            </br>
+
+            <!-- <form id="hr">
+          <div class="form-group">
+          <label for="name">Your name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="staffnumber">Enter your staff number</label>
+            <input type="text" class="form-control" id="staffnumber">
+          </div>
+          <button type="submit" name="button" class="btn btn-primary">submit</button>
+        </form> -->
+        <ol>
+              <form id="checkbox">
+               <div class="yesno">
+                 <div align="left"><br>
+
+                     <li>Have you worked in this department?</li>
+
+                     <input type="radio"  value="yes" name="optradio" class="yes"> YES<br>
+                     <input type="radio"  value="no" name="optradio" class="no"> NO<br>
+
+                   <br>
+               </div>
+
+               </form>
+              </br>
+
+              <li>Date of joining</li>
+              <form>
+                <input type="date" name="joiningdate">
+              </form>
+              </br>
+
+              <li>Date of leaving</li>
+              <form>
+                <input type="date" name="leavingdate">
+              </form>
+              </br>
+              <li>Name of Supervisor
+                <form>
+                  <input type="text" name="supervisor">
+                </form>
+                </br>
+                <div id="liblist">
+                  <li> List of library books and media in your posession</li>
+                  </br>
+                  <textarea name="listed items" rows="10" cols="30">
+          </textarea>
+            </ol>
+            </br>
+
+            <button type="submit" id="button-6" name="button" class="btn btn-info">Submit</button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="container">
+    <h3>Pending Issues</h3>
+    <h4>Departments</h4>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+
+
+  <footer>
+    <p>Copyright</p>
+    <p>2017</p>
+  </footer>
+
+</body>
+
+</html>

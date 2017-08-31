@@ -1,4 +1,180 @@
+#heading1{
+padding-bottom: 20px;
+padding-top: 10px;
+}
+/*.jumbotron{
+  background-color: #f27b35;
+}*/
+
+thead{
+  color: #f27b35;
+}
+
+#lib2 {
+  background-image: url("../assets/img/books.jpg");
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+
+}
+
+#heading {
+  font-size: 40px;
+  font-weight:bolder;
+  color:black;
+  float:right;
+  height:inherit;
+  }
+
+#info2 {
+  background-image: url("../assets/img/code.gif");
+  background-size: 480px  210px;
+  background-repeat: no-repeat;
+  padding-bottom: 140px;
+}
+
+#libbody {
+  font-family: "prociono"; font-size: 16px;
+  background-color: #BB8B5A
+
+}
+
+#libyes {
+  color: #596e7c;
+}
+
+#libno {
+  color: #596e7c;
+}
+
+#libsubmit {
+  color: #596e7c;
+  margin-bottom: 80px;
+
+}
+
+#infosubmit {
+  margin-bottom: 80px;
+}
+
+
+#infobody {
+  font-family: "prociono"; font-size: 16px;
+  background-color:  #9da3ad;
+body{
+  font-family: 'Prociono', serif;
+  font-size: 16px;
+  /*font-weight: 450;*/
+}
+#button-2{
+  float: right;
+}
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
+  color: #f27b35;
+}
 .foot{
+  background-image: url("../assets/img/footer2.jpg");
+  background-size: cover;
+}
+body {
+  font-family: 'Prociono', serif;
+}
+/*.form-group {
+  font-size: 16px;
+}
+.yesno {
+  font-size: 16px;
+}
+.details {
+  font-size: 16px;
+}*/
+.color {
+  background-size: cover;
+  background-image: url("../assets/img/header2.jpg");
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+.foot1 {
+  background-image: url("../assets/img/blue.jpg");
+  color: white;
+  background-size: cover;
+}
+.logo {
+  text-align: center;
+}
+.topnav {
+  float: right;
+  background-color: black;
+  font-weight: bold;
+  padding: 25px;
+  font-size: 25;
+  color: white;
+}
+
+.jumbotron1 {
+  background-color: black;
+  background-repeat: no-repeat
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-style: groove;
+}
+
+body {
+  font-family: 'Prociono', sans-serif;
+  background-repeat: no-repeat;
+  background-image: url("..assets/images/erie.JPG");
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+
+}
+.jumbotron3 {
+  margin: auto;
+  font-size: 20px;
+  border-style: groove;
+  color: inherit;
+}
+
+.jumbotron {
+  font-size: 20px;
+  color: white;
+}
+
+.heading {
+  float: left;
+  color: white;
+
+}
+footer {
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+.container {
+   margin: auto;
+   border-style: groove;
+   font-size: 20px;
+   color: white;
+
+
+ }
+ .foot{
   background-image: url("../assets/img/footer2.jpg");
   background-size: cover;
 }
@@ -27,4 +203,8 @@ body{
 }
 #logo{
   text-align: center;
+}
+.one {
+  display: none;
+}
 }
