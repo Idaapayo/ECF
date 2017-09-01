@@ -1,0 +1,40 @@
+.heading{
+  text-align: center;
+}
+#bodymain{
+  background-image: url("../assets/img/bluef.jpg");
+  background-size: cover;
+}
+.topping{
+  background-image: url("../assets/img/light1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pending{
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 150px;
+}
+.tech{
+  background-image: url("../assets/img/light1.jpg");
+  background-size: cover;
+}
+#h2{
+  color:#ffffff;
+}
+.black{
+  color:#000000;
+}
+.feet{
+  text-align: center;
+  background-color:#000000;
+  color: #ffffff;
+  right: 0;
+  left: 0;
+}
+.butde{
+  margin-bottom: 80px;
+}
+.text{
+  display: none;
+}
