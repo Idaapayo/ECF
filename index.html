@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -13,36 +11,56 @@
   <title>ECF</title>
 </head>
 
-<body>
-  <div class="jumbotron">
+<body id="bodymain">
+<div class="container">
+  <div class="jumbotron topping">
     <header class="heading"> <img src="assets/images/final.png"></header>
     <div class="topnav" id="myTopnav">
       <a href="#help">HELP</a>
       <a href="#faqs">FAQ's</a>
     </div>
-
-    <h1>FAIDA SOFTWARE DEVELOPERS </h1>
-    <span>Moringa Ltd.</span>
+    <h1>FAIDA SOFTWARE</h1>
+    <h2>CLEARANCE APP</h2>
   </div>
-  <div class="jumbotron"><br>
+  <div class="jumbotron tech">
     <form id="employee-names" action="index.html" method="get">
-      <p><strong>Username:</strong><br><input id="username" type="text"></p>
-      <p><strong>Employee-number:</strong><br><input id="staffno" type="number"></p>
-      <p><strong>Department:</strong><br><input id="depart" type="text"></p><br>
-      <input type="submit" class="btn btn-success" value="Submit">
+      <p>Welcome to the clearance process.Kindly fill in your credentials below and submit.</p><br>
+      <p><strong>Username:</strong><br><input id="username" type="text" required></p>
+      <p><strong>Employee-number:</strong><br><input id="staffno" type="number" required></p>
+      <p><strong>Department:</strong><br><input id="depart" type="text" required></p><br>
+      <input type="submit" class="btn btn-success" value="Submit" id="show">
     </form>
   </div>
-  <div class="jumbotron3">
-    <div class="container">
-      <h2>DEPARTMENTS</h2>
-
+      <div class="text">
+        <div class="butde">
+      <h2 id="h2">DEPARTMENTS</h2>
+      <!-- <div class="row"> -->
+        <div class="row col-md-12 buttons">
       <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Finance Department</button>
+          <button type="button" class="btn btn-info btn-md black" data-toggle="modal" data-target="#myModal">Finance Department</button>
+          <button type="button" class="btn btn-info btn-md black" data-toggle="modal" data-target="#myModal2">Human Resource Department</button>
+          <button type="button" class="btn btn-info btn-md black" data-toggle="modal" data-target="#myModal4">IS Department</button>
+          <button type="button" class="btn btn-info btn-md black" data-toggle="modal" data-target="#myModal6">Library Department</button>
+      </div>
+    </div>
+      <div class="pending">
+          <h2>Pending Issues</h2>
+            <ul>
+            <li class="issue1"></li>
+            <li class="issue2"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+        <div class="feet">
+        <strong>FAIDA&#169;2017</strong>
+      </div>
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
-
           <!-- FINANCE Modal content-->
           <div class="modal-content">
             <div class="modal-header">
@@ -130,9 +148,11 @@
         </div>
 
       </div>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Human Resource Department</button>
 
+    <div class="row-col-md-6">
+      <!-- Trigger the modal with a button -->
+
+    </div>
       <!-- Modal -->
       <div class="modal fade" id="myModal2" role="dialog">
         <div class="modal-dialog">
@@ -144,7 +164,8 @@
               <h2 class="modal-title">Human Resource Department</h2>
             </div>
             <div class="modal-body">
-            </div>
+
+
             <strong>USERNAME:</strong>
             <div class="username"></div>
             <strong>STAFF NUMBER:</strong>
@@ -181,16 +202,13 @@
                     <label for="reasonforleaving">Your reason for leaving:</label>
                     <input type="text" class="form-control" id="leaving">
                   </div>
-                  <p>List of company issued assets</p>
+                  <h4>List of company issued assets</h4>
                   <div class="row">
                     <div class="col-md-4">
-                      <h2>Name</h2>
                       <ul>Company ID</ul>
                       <ul>House</ul>
-                      <ul>Company Car</ul>
                     </div>
                     <div class="col-md-4">
-                      <h2>Returned </h2>
                       <div class="form-group">
                         <div>
                           <label for="rid">
@@ -203,15 +221,9 @@
                         <input id= "rhouse"type="checkbox" name="option1" value="returned"> Returned
                       </label>
                         </div>
-                        <div>
-                          <label for="rcar">
-                      <input id= "rcar" type="checkbox" name="option1" value="returned"> Returned
-                        </label>
-                        </div>
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <h2>Unreturned </h2>
                     <div>
                       <label for="uid">
                         <input id="uid" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
@@ -219,10 +231,6 @@
                       <div>
                         <label for="uhouse">
                       <input id="uhouse" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
-                    </div>
-                    <div>
-                      <label for="ucar">
-                      <input id="ucar" type="checkbox" name="option1" value="unreturned"> Unreturned</label>
                     </div>
                   </div>
                 </div>
@@ -241,9 +249,13 @@
         </div>
 
       </div>
+    </div>
+  <!-- </div> -->
+    <div class="row">
+    <div class="col-md-6">
       <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal4">IS Department</button>
 
+    </div>
       <!-- Modal -->
       <div class="modal fade" id="myModal4" role="dialog">
         <div class="modal-dialog">
@@ -339,72 +351,14 @@
         </div>
 
       </div>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal5">Marketing Department</button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal5" role="dialog">
-        <div class="modal-dialog">
-
-          <!--  Marketing Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h2 class="modal-title">Marketing Department</h2>
-            </div>
-            <div class="modal-body">
-              <strong>USERNAME:</strong>
-              <div class="username"></div>
-              <strong>STAFF NUMBER:</strong>
-              <div class="staffno"></div>
-              <strong>DEPARTMENT:</strong>
-              <div class="depart"></div> <br>
 
 
-              <form id="checkbox">
-                <div class="yesno">
-                  <div align="left"><br>
-                    <ul>
-                      <li>Have you worked in this department?</li>
-                      <input type="radio" value="yes" name="optradio" class="yes"> YES<br>
-                      <input type="radio" value="no" name="optradio" class="no"> NO<br>
-                    </ul>
-                    <br>
-                  </div>
 
-              </form>
-              <br>
-              <div class="details">
-                <form id="details">
-                  <div class="form group">
-                    <label for="startdate">Start Date:</label>
-                    <input type="text" class="form-control" id="startdate">
-                  </div>
-                  <div class="form group">
-                    <label for="enddate">End Date:</label>
-                    <input type="text" class="form-control" id="enddate">
-                  </div>
-                  <div class="form group">
-                    <label for="nameofsupervisor">Name of your supervisor:</label>
-                    <input type="text" class="form-control" id="supervisor">
-                  </div>
-                  <br>
-                  <button type="submit" name="button" class="btn btn-primary">submit</button>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-              </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6">Library Department</button>
+
+   <div class="col-md-6">
+      <!-- Trigger the modal with a button -->
 
       <!-- Modal -->
       <div class="modal fade" id="myModal6" role="dialog">
@@ -489,32 +443,11 @@
 
             </div>
           </div>
-
         </div>
-
-
-
-
       </div>
 
-      <div class="container">
-        <h3>Pending Issues</h3>
-        <h4>Departments</h4>
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
+    </div>
 
-
-      <footer>
-        <p>FAIDA&#169;2017</p>
-
-      </footer>
-
-</body>
-
+    </div>
+ </body>
 </html>

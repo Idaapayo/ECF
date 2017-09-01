@@ -9,6 +9,7 @@ $(document).ready(function() {
     $(".staffno").text(inputtedSerial);
     $(".depart").text(inputtedDepart);
 
+    $(".text").show();
 
   })
   $(".no").click(function() {
@@ -32,8 +33,6 @@ $(document).ready(function() {
       this.disbursed = disbursed;
       this.repaid = repaid;
     }
-    // Amount.prototype.result = function () {
-    //   return.this.disbursed - this.repaid;
 
 
     if ((disbursed === 0)) {
@@ -44,22 +43,28 @@ $(document).ready(function() {
     } else if (repaid < disbursed) {
 
       alert("You are currently not cleared due to the pending loan repayment. An e-mail has been sent to the head of department for follow up")
+      $(".issue2").text("Uncleared loan amount: " + result)
     } else {
       alert("Kindly fill the fields with your loan details. If you have no loans please indicate zero(0) in all fields")
     }
-
   });
 
-  $("form#details").submit(function(event) {
+  $("form#checkbox").submit(function(event) {
     event.preventDefault();
 
 
-  });
-  $("#rid").click(function(e) {
-    console.log($("#rid").is(':checked'));
-  });
 
-  if ($("#rid").is(':checked')) {
-    alert("checked");
-  }
+    if ($("#rid").is(':checked') && ($("#rhouse").is(':checked'))) {
+
+      alert("You've been cleared awaiting final approval. An e-mail has been sent to the head of the department awaiting approval.")
+
+    } else if ($("#uid").is(':checked') || ($("#uhouse").is(':checked'))) {
+
+      alert("You are currently not cleared due to the unreturned company's assets. An e-mail has been sent to the head of the department for follow up.")
+      $(".issue1").text("House: " + "Unreturned")
+    } else {
+      alert("Kindly make a selection on the checkboxes.")
+    }
+  })
+
 });
